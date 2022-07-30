@@ -9,7 +9,6 @@ import fetch from 'node-fetch'
 /**
  * @type {import('@adiwajshing/baileys')}
  */
-const { proto } = (await import('@adiwajshing/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
     clearTimeout(this)
@@ -1302,17 +1301,7 @@ export async function participantsUpdate({ id, participants, action }) {
                 text = (chat.sDemote || this.sdemote || conn.sdemote || '@user *is no longer Admin*')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect) return
-                /*
-    let ppu = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
-    this.reply(m.chat, text.trim(), m, { contextInfo: {
-externalAdReply: {
-showAdAttribution: true,
-title: `${htjava} INFO ${htjava}`,
-body: botdate,
-sourceUrl: sig,
-thumbnail: await( await fetch(ppu)).buffer() }}})
-*/
-this.sendHydrated(id, text.trim(), botdate, null, null, null, null, null, [
+            this.sendHydrated(id, text.trim(), botdate, null, null, null, null, null, [
       [null, null]
     ], null)
             break
@@ -1339,17 +1328,7 @@ export async function groupsUpdate(groupsUpdate) {
             if (groupUpdate.restrict == true) text = (chats.sRestrictOn || this.sRestrictOn || conn.sRestrictOn || '*Group has been all participants!*')
             if (groupUpdate.restrict == false) text = (chats.sRestrictOff || this.sRestrictOff || conn.sRestrictOff || '*Group has been only admin!*')
             if (!text) continue
-            /*
-    let pgu = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
-    this.reply(m.chat, text.trim(), m, { contextInfo: {
-externalAdReply: {
-showAdAttribution: true,
-title: `${htjava} INFO ${htjava}`,
-body: botdate,
-sourceUrl: sig,
-thumbnail: await( await fetch(pgu)).buffer() }}})
-*/
-this.sendHydrated(id, text.trim(), botdate, null, null, null, null, null, [
+            this.sendHydrated(id, text.trim(), botdate, null, null, null, null, null, [
       [null, null]
     ], null)
     }
@@ -1408,17 +1387,7 @@ ${htjava} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifk
         restrict: `*${htki} ALERT ${htka}*
 ${htjava} Fitur ini di *disable* !`
     }[type]
-    /*
-    let pdfail = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-    if (msg) return conn.reply(m.chat, msg, m, { contextInfo: {
-externalAdReply: {
-showAdAttribution: true,
-title: `👋 Hai, ${await this.getName(m.sender)}`,
-body: botdate,
-sourceUrl: sig,
-thumbnail: await( await fetch(pdfail)).buffer() }}})
-*/
-if (msg) return conn.sendHydrated(m.chat, msg, botdate, null, null, null, null, null, [
+    if (msg) return conn.sendHydrated(m.chat, msg, botdate, null, null, null, null, null, [
       [null, null]
     ], null)
 }
