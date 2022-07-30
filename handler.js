@@ -1284,12 +1284,15 @@ export async function participantsUpdate({ id, participants, action }) {
   let gettext = await fetch('https://raw.githubusercontent.com/fawwaz37/random/main/bijak.txt')
   let restext = await gettext.text()
   let katarandom = restext.split('\n')
-  
+  /*
   this.sendHydrated2(id, text, wm + '\n\n' + botdate, action === 'add' ? pp : pp, sgc, (action == 'add' ? 'Hinata Group' : 'Nitip Gorengan'), null, null, [
       ['🎀 Menu', '/menu'],
       ['🪄 Test', '/ping'],
       ['Ok 🎉\n\n' + katarandom.getRandom() + '\n\n', '...']
     ], null, false, { mentions: [user] })
+    */
+    this.sendButton(id, text, botdate, pp, [['🎀 Menu', '/menu'],
+      ['Ok 🎉\n\n' + katarandom.getRandom() + '\n\n', '...']], m, { mentions: this.parseMention(text) })
                     }
                 }
             }
@@ -1300,10 +1303,7 @@ export async function participantsUpdate({ id, participants, action }) {
            if (!text)
                 text = (chat.sDemote || this.sdemote || conn.sdemote || '@user *is no longer Admin*')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
-            if (chat.detect) return
-            this.sendHydrated(id, text.trim(), botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+            if (chat.detect) return this.sendButton(id, text.trim(), botdate, hwaifu.getRandom(), [['Menu', '/menu']], m, { mentions: this.parseMention(text) })
             break
     }
 }
