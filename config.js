@@ -6,16 +6,16 @@ import moment from 'moment-timezone'
 
 /*Oᴡɴᴇʀ number*/
 global.owner = [
-  ['6282195322106', '️Oᴡɴᴇʀ One', true],
+  ['6289688069444', '️Oᴡɴᴇʀ One', true],
   ['6282195322106', '️Oᴡɴᴇʀ Two', true],
   ['6282195322106', '️Oᴡɴᴇʀ Three', true],
   ['6282195322106', '️Oᴡɴᴇʀ Four', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Five', true],
+  ['6289629677446', '️Oᴡɴᴇʀ Five', true],
   ['6282195322106', '️Oᴡɴᴇʀ Six', true],
   ['6282195322106', '️Oᴡɴᴇʀ Seven', true],
   ['6282195322106', '️Oᴡɴᴇʀ Eight', true],
   ['6282195322106', '️Oᴡɴᴇʀ Nine', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Teen', true]
+  ['6289518487462', '️Oᴡɴᴇʀ Teen', true]
 ]
 global.mods = []
 global.prems = []
@@ -67,7 +67,7 @@ global.APIKeys = {
 
 /*Number*/
 global.nomorbot = '6285171216276'
-global.nomorown = '6282195322106'
+global.nomorown = '6289688069444'
 global.namebot = 'ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
