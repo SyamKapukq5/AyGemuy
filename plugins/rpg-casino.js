@@ -44,10 +44,7 @@ handler.help = ['casino <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^(casino|csn)$/i
 
-handler.fail = null
-
-handler.limit = 1
-
+handler.group = true
 export default handler 
 
 function pickRandom(list) {

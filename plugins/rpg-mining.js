@@ -33,7 +33,7 @@ handler.command = /^(mining)$/i
 
 handler.cooldown = cooldown
 handler.disabled = false
-
+handler.group = true
 export default handler
 
 function reward(user = {}) {

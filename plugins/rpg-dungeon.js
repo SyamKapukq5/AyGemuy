@@ -711,7 +711,7 @@ handler.command = /^(dungeon)$/i
 handler.level = 15
 
 handler.mods = false
-
+handler.group = true
 export default handler
 
 /**

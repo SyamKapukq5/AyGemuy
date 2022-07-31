@@ -8,8 +8,7 @@ let handler = async (m, { conn }) => {
   handler.help = ['nguli']
   handler.tags = ['rpg']
   handler.command = /^(nguli)$/i
-  
-  
+  handler.group = true
   handler.fail = null
   
   

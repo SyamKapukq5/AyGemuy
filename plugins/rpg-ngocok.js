@@ -150,7 +150,7 @@ setTimeout(() => {
 handler.help = ['ngocok']
 handler.tags = ['rpg']
 handler.command = /^(ngocok|mengocok)$/i
-
+handler.group = true
 export default handler
 
 function clockString(ms) {

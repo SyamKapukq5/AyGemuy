@@ -89,7 +89,7 @@ setTimeout(() => {
 handler.help = ['rob']
 handler.tags = ['rpg']
 handler.command = /^(rob|robery)$/i
-
+handler.group = true
 export default handler
 
 function clockString(ms) {

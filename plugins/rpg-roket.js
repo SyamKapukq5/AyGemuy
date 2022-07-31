@@ -131,7 +131,7 @@ handler.help = ['roket']
 handler.tags = ['rpg']
 handler.command = /^(roket|ngroket|groket|jadiroket)$/i
 handler.register = true
-
+handler.group = true
 export default handler
 
 

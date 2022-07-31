@@ -49,10 +49,7 @@ handler.tags = ['rpg']
 handler.command = /^(berkebon)/i
 
 handler.group = true
-
-handler.fail = null
 handler.limit = true
-
 
 export default handler
 

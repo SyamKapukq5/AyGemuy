@@ -151,7 +151,7 @@ setTimeout(() => {
 handler.help = ['nambang']
 handler.tags = ['rpg']
 handler.command = /^(nambang|menambang)$/i
-
+handler.group = true
 export default handler
 
 function clockString(ms) {

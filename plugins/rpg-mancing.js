@@ -507,7 +507,7 @@ ${ usedPrefix }cook`
 handler.help = ['mancing','fishing']
 handler.tags = ['rpg']
 handler.command = /^(mancing|memancing|fish)$/i 
-
+handler.group = true
 export default handler 
 //JANGAN DIUBAH YA YG DIBAWAH
 function pickRandom(list) {

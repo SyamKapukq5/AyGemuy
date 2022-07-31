@@ -119,7 +119,7 @@ handler.help = ['ojek']
 handler.tags = ['rpg']
 handler.command = /^(ojek|ngojek|gojek|jadiojek)$/i
 handler.register = true
-
+handler.group = true
 export default handler
 
 

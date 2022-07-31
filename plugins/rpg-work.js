@@ -84,7 +84,7 @@ handler.command = /^(petualang|work)$/i
 
 handler.fail = null
 handler.register = false
-
+handler.group = true
 export default handler
 
 function pickRandom(list) {

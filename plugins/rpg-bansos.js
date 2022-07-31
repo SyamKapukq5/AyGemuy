@@ -38,6 +38,7 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
 handler.help = ['bansos']
 handler.tags = ['rpg']
 handler.command = /^(bansos|korupsi)$/i
+handler.group = true
 export default handler
 
 function pickRandom(list) {

@@ -117,7 +117,7 @@ setTimeout(() => {
 handler.help = ['nebang']
 handler.tags = ['rpg']
 handler.command = /^(nebang|menebang)$/i
-
+handler.group = true
 export default handler
 
 function clockString(ms) {

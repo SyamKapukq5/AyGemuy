@@ -16,5 +16,5 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['nabung <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^nabung([0-9]+)|nabung|nabungall$/i
-
+handler.group = true
 export default handler

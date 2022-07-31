@@ -108,7 +108,7 @@ let handler = async (m, {
 handler.help = ['berburu']
 handler.tags = ['rpg']
 handler.command = /^(berburu)$/i
-
+handler.group = true
 export default handler
 
 function clockString(ms) {
